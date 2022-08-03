@@ -19,7 +19,7 @@ ddev get torenware/ddev-viteserve
 ddev restart
 ddev vite-serve start
 ```
-now this is where it gets unclear to me, as far as I understand Laravel requires you to run npm run watch. This in turn runs the vite command, so it starts a vite dev server. If this is not running you get the following error:
+now this is where it gets unclear to me, as far as I understand Laravel requires you to run npm run dev. This in turn runs the vite command, so it starts a vite dev server. If this is not running you get the following error:
 ![img.png](img.png)
 
 ## Import the entrypoints in laravel
