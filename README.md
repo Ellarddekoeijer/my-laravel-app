@@ -66,7 +66,7 @@ Besides the server settings you are free to alter this to your needs.
 ### Add the vite entrypoints
 head over to your `welcome.blade.php` file and add `@vite(['resources/css/app.css', 'resources/js/app.js'])` to the `<head>`.
 
-Restart your ddev.
+Restart your ddev and make sure `ddev vite-serve` is running
 
 Any changes to the app.js or app.css files will be reflected immediately.
 
