@@ -15,6 +15,7 @@ ddev exec "php artisan key:generate"
 ddev launch
 ```
 This will create a laravel boilerplate project in the my-laravel-app directory.
+Next run a NPM install by doing `ddev npm i`
 
 ## Installing the vite-serve add-on
 This is an [add-on to ddev created and maintained by torenware](https://github.com/torenware/ddev-viteserve) it creates a vite dev server on your container.
