@@ -28,7 +28,7 @@ ddev vite-serve start
 We must add the `VITE_APP_URL` variable to your .env. The simplest way to do this is to add it to your .ddev/config.yaml.
 ```yaml
 web_environment:
-  - VITE_APP_URL=${DDEV_HOSTNAME}
+    - VITE_APP_URL=${DDEV_HOSTNAME}
 ```
 This basically exposes the DDEV_HOSTNAME env variable to vite.
 
