@@ -2,20 +2,20 @@ import laravel from 'laravel-vite-plugin';
 import { defineConfig, loadEnv } from 'vite'
 
 export default defineConfig(({ command, mode }) => {
-    // Load env file based on `mode` in the current working directory.
-    // Set the third parameter to '' to load all env regardless of the `VITE_` prefix.
+    //Load the env variables that are prefixed with VITE_
     const env = loadEnv(mode, process.cwd(), '')
     return {
-
+        server: {
+            hmr: {
+                protocol: 'wss',
+                host: env.VITE_APP_URL,
+            },
+        },
         plugins: [
             laravel({
                 input: ['resources/css/app.css', 'resources/js/app.js'],
                 refresh: true,
             }),
         ],
-        // vite config
-        define: {
-            __APP_ENV__: env.APP_URL
-        }
     }
 })
