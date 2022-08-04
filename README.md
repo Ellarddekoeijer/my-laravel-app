@@ -23,6 +23,7 @@ ddev get torenware/ddev-viteserve
 ddev restart
 ddev vite-serve start
 ```
+In .ddev/.env change `VITE_PROJECT_DIR=frontend` to `VITE_PROJECT_DIR=.`
 
 ## Configure .ddev/config.yaml
 We must add the `VITE_APP_URL` variable to your .env. The simplest way to do this is to add it to your .ddev/config.yaml.
